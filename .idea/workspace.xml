@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat(email): add user activation email with registration and DB update on link click">
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat(security): configure Spring Security with CORS, CSRF disable, stateless sessions, and password encoder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760367869269</updated>
-      <workItem from="1760367869666" duration="7679000" />
+      <workItem from="1760367869666" duration="7913000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -162,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760375193721</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(security): configure Spring Security with CORS, CSRF disable, stateless sessions, and password encoder">
+      <option name="closed" value="true" />
+      <created>1760375908787</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760375908787</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +194,7 @@
     <MESSAGE value="feat(profile): implement profile registration with entity, DTO, repository (findByEmail), service and controller" />
     <MESSAGE value="feat(profileController): request mapping /profile matches" />
     <MESSAGE value="feat(email): add user activation email with registration and DB update on link click" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(email): add user activation email with registration and DB update on link click" />
+    <MESSAGE value="feat(security): configure Spring Security with CORS, CSRF disable, stateless sessions, and password encoder" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(security): configure Spring Security with CORS, CSRF disable, stateless sessions, and password encoder" />
   </component>
 </project>
