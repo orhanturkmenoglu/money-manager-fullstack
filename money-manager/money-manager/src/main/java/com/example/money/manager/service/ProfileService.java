@@ -4,6 +4,7 @@ import com.example.money.manager.dto.AuthDTO;
 import com.example.money.manager.dto.ProfileDto;
 import com.example.money.manager.entity.ProfileEntity;
 import com.example.money.manager.repository.ProfileRepository;
+import com.example.money.manager.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -24,13 +25,14 @@ public class ProfileService {
     private final EmailService emailService;
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
+    private final JwtUtil jwtUtil;
 
     public ProfileDto registerProfile(ProfileDto profileDto) {
         ProfileEntity newProfile = toEntity(profileDto);
         newProfile.setActiveToken(UUID.randomUUID().toString());
         newProfile = profileRepository.save(newProfile);
 
-        String activationLink = "http://localhost:8080/api/v1.0/profile/active?token=" + newProfile.getActiveToken();
+        String activationLink = "http://localhost:8080/api/v1.0/active?token=" + newProfile.getActiveToken();
         String htmlBody = EmailService.buildActivationEmailBody(newProfile.getFullName(), activationLink);
 
         emailService.sendEmail(newProfile.getEmail(), htmlBody);
@@ -107,7 +109,9 @@ public class ProfileService {
         try {
             authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(authDTO.getEmail(), authDTO.getPassword()));
-            return Map.of("token", "JWT TOKEN",
+
+            String token = jwtUtil.generateToken(authDTO.getEmail());
+            return Map.of("token", token,
                     "user", getPublicProfile(authDTO.getEmail()));
         } catch (Exception e) {
             throw new RuntimeException("Invalid email or password");
