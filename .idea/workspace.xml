@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat(profile): implement profile registration with entity, DTO, repository (findByEmail), service and controller">
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat(profileController): request mapping /profile matches">
+      <change afterPath="$PROJECT_DIR$/.idea/RestfulApiTool-Environment-Cache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ProfileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,21 +31,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "orhanturkmenoglu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;orhanturkmenoglu&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/orhanturkmenoglu/money-manager-fullstack.git",
-    "accountId": "ed9e0238-35b5-4767-ab5f-3466dae833e5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/orhanturkmenoglu/money-manager-fullstack.git&quot;,
+    &quot;accountId&quot;: &quot;ed9e0238-35b5-4767-ab5f-3466dae833e5&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3414hxcFGzPnN3ggct1hNFK5SdY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,7 +54,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.MoneyManagerApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/money-manager/money-manager/money-manager/src/main/java/com/example/money/manager",
@@ -65,9 +78,18 @@
   </component>
   <component name="RunManager">
     <configuration name="MoneyManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="EMAIL_USERNAME" value="orhantrkmn15@gmail.com" />
+        <env name="EMAIL_PASSWORD" value="dbng lmad dldv obpy" />
+      </envs>
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="money-manager" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.money.manager.MoneyManagerApplication" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760367869269</updated>
-      <workItem from="1760367869666" duration="3355000" />
+      <workItem from="1760367869666" duration="6909000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -130,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760371301584</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(profileController): request mapping /profile matches">
+      <option name="closed" value="true" />
+      <created>1760371420121</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760371420121</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +183,7 @@
     <MESSAGE value="feat: add MySQL and JPA configuration with context path setup" />
     <MESSAGE value="feat: add health/status endpoint for application availability check" />
     <MESSAGE value="feat(profile): implement profile registration with entity, DTO, repository (findByEmail), service and controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(profile): implement profile registration with entity, DTO, repository (findByEmail), service and controller" />
+    <MESSAGE value="feat(profileController): request mapping /profile matches" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(profileController): request mapping /profile matches" />
   </component>
 </project>
