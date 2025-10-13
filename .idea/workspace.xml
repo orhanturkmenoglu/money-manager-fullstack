@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat(profileController): request mapping /profile matches">
-      <change afterPath="$PROJECT_DIR$/.idea/RestfulApiTool-Environment-Cache.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat(email): add user activation email with registration and DB update on link click">
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/ProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ProfileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760367869269</updated>
-      <workItem from="1760367869666" duration="6909000" />
+      <workItem from="1760367869666" duration="7679000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -160,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760371420121</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat(email): add user activation email with registration and DB update on link click">
+      <option name="closed" value="true" />
+      <created>1760375193721</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760375193721</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +186,7 @@
     <MESSAGE value="feat: add health/status endpoint for application availability check" />
     <MESSAGE value="feat(profile): implement profile registration with entity, DTO, repository (findByEmail), service and controller" />
     <MESSAGE value="feat(profileController): request mapping /profile matches" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(profileController): request mapping /profile matches" />
+    <MESSAGE value="feat(email): add user activation email with registration and DB update on link click" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(email): add user activation email with registration and DB update on link click" />
   </component>
 </project>
