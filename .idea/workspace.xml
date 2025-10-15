@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat: register JwtRequestFilter as a Spring component to resolve missing bean error">
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/CategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/CategoryEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/CategoryService.java" afterDir="false" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat: add Category module with CRUD operations and DTO mapping&#10;&#10;- Added CategoryEntity with profile relation&#10;- Implemented CategoryService for create, update, and query operations&#10;- Added CategoryDTO for data transfer&#10;- Created CategoryController endpoints&#10;- Added CategoryRepository with custom query methods">
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/ExpenseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/IncomeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/ExpenseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/IncomeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ExpenseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/IncomeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -108,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760367869269</updated>
-      <workItem from="1760367869666" duration="20654000" />
+      <workItem from="1760367869666" duration="23157000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -206,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760543246194</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: add Category module with CRUD operations and DTO mapping&#10;&#10;- Added CategoryEntity with profile relation&#10;- Implemented CategoryService for create, update, and query operations&#10;- Added CategoryDTO for data transfer&#10;- Created CategoryController endpoints&#10;- Added CategoryRepository with custom query methods">
+      <option name="closed" value="true" />
+      <created>1760548312912</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1760548312912</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +245,8 @@
     <MESSAGE value="feat(auth): implement user authentication, login, JWT token generation and account activation" />
     <MESSAGE value="feat(auth): implement JWT token generation and validation for user authentication" />
     <MESSAGE value="feat: register JwtRequestFilter as a Spring component to resolve missing bean error" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: register JwtRequestFilter as a Spring component to resolve missing bean error" />
+    <MESSAGE value="feat: add Category module with CRUD operations and DTO mapping&#10;&#10;- Added CategoryEntity with profile relation&#10;- Implemented CategoryService for create, update, and query operations&#10;- Added CategoryDTO for data transfer&#10;- Created CategoryController endpoints&#10;- Added CategoryRepository with custom query methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Category module with CRUD operations and DTO mapping&#10;&#10;- Added CategoryEntity with profile relation&#10;- Implemented CategoryService for create, update, and query operations&#10;- Added CategoryDTO for data transfer&#10;- Created CategoryController endpoints&#10;- Added CategoryRepository with custom query methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
