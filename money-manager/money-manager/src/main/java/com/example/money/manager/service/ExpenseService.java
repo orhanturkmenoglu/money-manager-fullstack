@@ -7,6 +7,7 @@ import com.example.money.manager.entity.ProfileEntity;
 import com.example.money.manager.repository.CategoryRepository;
 import com.example.money.manager.repository.ExpenseRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -62,8 +63,17 @@ public class ExpenseService {
     public BigDecimal getTotalExpenseForCurrentUser() {
         ProfileEntity profile = profileService.getCurrentProfile();
         BigDecimal total = expenseRepository.findTotalExpenseByProfileId(profile.getId());
-        return  total !=null ? total :BigDecimal.ZERO;
+        return total != null ? total : BigDecimal.ZERO;
     }
+
+
+    public List<ExpenseDTO> filterExpenses(LocalDate startDate, LocalDate endDate, String keyword, Sort sort) {
+        ProfileEntity profile = profileService.getCurrentProfile();
+        List<ExpenseEntity> list = expenseRepository.findByProfileIdAndDateBetweenAndNameContainingIgnoreCase(profile.getId()
+                , startDate, endDate, keyword, sort);
+        return list.stream().map(this::toDTO).toList();
+    }
+
 
     private ExpenseEntity toEntity(ExpenseDTO dto, ProfileEntity profile, CategoryEntity category) {
         return ExpenseEntity.builder()

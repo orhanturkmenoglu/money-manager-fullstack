@@ -23,12 +23,12 @@ public interface ExpenseRepository extends JpaRepository<ExpenseEntity, String> 
     @Query("select sum (e.amount) from ExpenseEntity e where e.profile.id = :profileId")
     BigDecimal findTotalExpenseByProfileId(@Param("profileId") String profileId);
 
-    // select * from tbl_expenses where profile_id = : ?1  and date between ?2 and ?3 name like %?4%
+    // select * from tbl_expenses where profile_id = : ?1  and date between ?2 and ?3 keyword like %?4%
     List<ExpenseEntity> findByProfileIdAndDateBetweenAndNameContainingIgnoreCase(
             String profileId,
             LocalDate startDate,
             LocalDate endDate,
-            String name,
+            String keyword,
             Sort sort
     );
 
