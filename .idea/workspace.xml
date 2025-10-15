@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat: add Category module with CRUD operations and DTO mapping&#10;&#10;- Added CategoryEntity with profile relation&#10;- Implemented CategoryService for create, update, and query operations&#10;- Added CategoryDTO for data transfer&#10;- Created CategoryController endpoints&#10;- Added CategoryRepository with custom query methods">
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/ExpenseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/IncomeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/ExpenseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/IncomeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ExpenseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/IncomeRepository.java" afterDir="false" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat : add IncomeRepository and ExponseRepository with custom query methods">
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/ExpenseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/IncomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ExpenseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/IncomeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/ExpenseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/ExpenseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/IncomeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/IncomeDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760367869269</updated>
-      <workItem from="1760367869666" duration="23157000" />
+      <workItem from="1760367869666" duration="27085000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -215,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760548312912</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat : add IncomeRepository and ExponseRepository with custom query methods">
+      <option name="closed" value="true" />
+      <created>1760550633321</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1760550633321</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +254,8 @@
     <MESSAGE value="feat(auth): implement JWT token generation and validation for user authentication" />
     <MESSAGE value="feat: register JwtRequestFilter as a Spring component to resolve missing bean error" />
     <MESSAGE value="feat: add Category module with CRUD operations and DTO mapping&#10;&#10;- Added CategoryEntity with profile relation&#10;- Implemented CategoryService for create, update, and query operations&#10;- Added CategoryDTO for data transfer&#10;- Created CategoryController endpoints&#10;- Added CategoryRepository with custom query methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Category module with CRUD operations and DTO mapping&#10;&#10;- Added CategoryEntity with profile relation&#10;- Implemented CategoryService for create, update, and query operations&#10;- Added CategoryDTO for data transfer&#10;- Created CategoryController endpoints&#10;- Added CategoryRepository with custom query methods" />
+    <MESSAGE value="feat : add IncomeRepository and ExponseRepository with custom query methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : add IncomeRepository and ExponseRepository with custom query methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
