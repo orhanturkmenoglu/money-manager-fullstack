@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat: add IncomeController with latest and total income endpoints">
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/FilterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/FilterDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/RecentTransactionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/DashboardService.java" afterDir="false" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat(dashboard-filter): implement DashboardService, DashboardController, FilterController, RecentTransactionDTO">
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/NotificationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/MoneyManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/MoneyManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/ExpenseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/ExpenseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ExpenseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/EmailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ExpenseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/IncomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/IncomeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760367869269</updated>
-      <workItem from="1760367869666" duration="30347000" />
+      <workItem from="1760367869666" duration="33459000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -241,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760555343796</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat(dashboard-filter): implement DashboardService, DashboardController, FilterController, RecentTransactionDTO">
+      <option name="closed" value="true" />
+      <created>1760558356321</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1760558356321</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +283,8 @@
     <MESSAGE value="feat : add IncomeRepository and ExponseRepository with custom query methods" />
     <MESSAGE value="feat: add Expense and Income services &amp; controllers; repository queries implemented" />
     <MESSAGE value="feat: add IncomeController with latest and total income endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add IncomeController with latest and total income endpoints" />
+    <MESSAGE value="feat(dashboard-filter): implement DashboardService, DashboardController, FilterController, RecentTransactionDTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(dashboard-filter): implement DashboardService, DashboardController, FilterController, RecentTransactionDTO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

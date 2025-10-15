@@ -35,7 +35,7 @@ public class ProfileService {
         String activationLink = "http://localhost:8080/api/v1.0/active?token=" + newProfile.getActiveToken();
         String htmlBody = EmailService.buildActivationEmailBody(newProfile.getFullName(), activationLink);
 
-        emailService.sendEmail(newProfile.getEmail(), htmlBody);
+        emailService.sendEmail(newProfile.getEmail(),"Activate Your Account",htmlBody);
 
         return toDto(newProfile);
     }
