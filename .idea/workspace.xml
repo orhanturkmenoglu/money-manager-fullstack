@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat(auth): implement JWT token generation and validation for user authentication">
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/filter/JwtRequestFilter.java" afterDir="false" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat: register JwtRequestFilter as a Spring component to resolve missing bean error">
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/dto/CategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/CategoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/CategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/controller/ProfileController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760367869269</updated>
-      <workItem from="1760367869666" duration="15743000" />
+      <workItem from="1760367869666" duration="20654000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -196,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760378711587</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: register JwtRequestFilter as a Spring component to resolve missing bean error">
+      <option name="closed" value="true" />
+      <created>1760543246194</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1760543246194</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +235,8 @@
     <MESSAGE value="feat(security): encode user passwords with BCrypt before saving to DB" />
     <MESSAGE value="feat(auth): implement user authentication, login, JWT token generation and account activation" />
     <MESSAGE value="feat(auth): implement JWT token generation and validation for user authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(auth): implement JWT token generation and validation for user authentication" />
+    <MESSAGE value="feat: register JwtRequestFilter as a Spring component to resolve missing bean error" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: register JwtRequestFilter as a Spring component to resolve missing bean error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -238,6 +249,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/CategoryService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
