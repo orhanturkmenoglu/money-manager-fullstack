@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="Add target folder">
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="application-prod.properties postgresql config updated.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +100,7 @@
       <command value="mvn clean package -DskipTests " />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile build">
+  <component name="RunManager" selected="Spring Boot.MoneyManagerApplication">
     <configuration name="MoneyManagerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="money-manager" />
       <extension name="coverage">
@@ -237,7 +238,7 @@
       <workItem from="1760624472314" duration="226000" />
       <workItem from="1760625633383" duration="2971000" />
       <workItem from="1760881973005" duration="5239000" />
-      <workItem from="1760889860714" duration="5062000" />
+      <workItem from="1760889860714" duration="5640000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -543,7 +544,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760892834799</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="application-prod.properties postgresql config updated.">
+      <option name="closed" value="true" />
+      <created>1760902002645</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1760902002645</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +570,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(profileController): request mapping /profile matches" />
     <MESSAGE value="feat(email): add user activation email with registration and DB update on link click" />
     <MESSAGE value="feat(security): configure Spring Security with CORS, CSRF disable, stateless sessions, and password encoder" />
     <MESSAGE value="feat(security): encode user passwords with BCrypt before saving to DB" />
@@ -586,7 +594,8 @@
     <MESSAGE value="chore(structure): reorganize project folder structure for money-manager" />
     <MESSAGE value="dockerfile updated." />
     <MESSAGE value="Add target folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add target folder" />
+    <MESSAGE value="application-prod.properties postgresql config updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="application-prod.properties postgresql config updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
