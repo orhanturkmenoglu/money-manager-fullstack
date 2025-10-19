@@ -234,15 +234,7 @@
       <workItem from="1760624472314" duration="226000" />
       <workItem from="1760625633383" duration="2971000" />
       <workItem from="1760881973005" duration="5239000" />
-      <workItem from="1760889860714" duration="13230000" />
-    </task>
-    <task id="LOCAL-00005" summary="feat(profile): implement profile registration with entity, DTO, repository (findByEmail), service and controller">
-      <option name="closed" value="true" />
-      <created>1760371301584</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1760371301584</updated>
+      <workItem from="1760889860714" duration="13554000" />
     </task>
     <task id="LOCAL-00006" summary="feat(profileController): request mapping /profile matches">
       <option name="closed" value="true" />
@@ -628,7 +620,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760909948379</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="application.properties update and mvn package updated.">
+      <option name="closed" value="true" />
+      <created>1760910584366</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1760910584366</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,6 +689,11 @@
           <url>file://$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/CategoryService.java</url>
           <line>31</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/money/manager/config/SecurityConfig.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
