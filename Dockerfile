@@ -1,5 +1,14 @@
+# Temel imaj olarak OpenJDK 24 slim kullanıyoruz
 FROM openjdk:24-jdk-slim
+
+# Çalışma dizini
 WORKDIR /app
-COPY target/money-manager-0.0.1-SNAPSHOT.jar moneymanager-v1.0.jar
+
+# Jar dosyasını kopyala (target altından)
+COPY target/money-manager-0.0.1-SNAPSHOT.jar ./money-manager.jar
+
+# Port aç
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "moneymanager-v1.0.jar"]
+
+# Uygulamayı çalıştır
+ENTRYPOINT ["java", "-jar", "money-manager.jar"]
