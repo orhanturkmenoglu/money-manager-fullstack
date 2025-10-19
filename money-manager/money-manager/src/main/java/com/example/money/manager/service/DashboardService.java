@@ -56,15 +56,18 @@ public class DashboardService {
                         return b.getCreatedAt().compareTo(a.getCreatedAt());
                     }
                     return cmp;
+
+
                 }).toList();
 
         returnValue.put("totalBalance", incomeService.getTotalIncomeForCurrentUser()
                 .subtract(expenseService.getTotalExpenseForCurrentUser()));
         returnValue.put("totalIncome", incomeService.getTotalIncomeForCurrentUser());
         returnValue.put("totalExpense", expenseService.getTotalExpenseForCurrentUser());
-        returnValue.put("recent5Expenses",latestExpenses);
-        returnValue.put("recent5Incomes",latestIncomes);
-        returnValue.put("recentTransactions",recentTransactions);
+        returnValue.put("recent5Expenses", latestExpenses);
+        returnValue.put("recent5Incomes", latestIncomes);
+        returnValue.put("recentTransactions", recentTransactions);
         return returnValue;
     }
+
 }
