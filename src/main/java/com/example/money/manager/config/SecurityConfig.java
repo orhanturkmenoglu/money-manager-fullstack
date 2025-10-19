@@ -38,6 +38,7 @@ public class SecurityConfig {
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(requestFilter,UsernamePasswordAuthenticationFilter.class)
+                .csrf(csrf -> csrf.disable()) // JWT için CSRF kapat
                 .build();
     }
 
