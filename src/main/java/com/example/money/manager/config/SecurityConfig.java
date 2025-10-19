@@ -27,18 +27,24 @@ public class SecurityConfig {
     private final AppUserDetailsService appUserDetailsService;
     private final JwtRequestFilter requestFilter;
 
-
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        return http.cors(Customizer.withDefaults())
+        return http
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-                .authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/status", "/health", "/login", "/register", "/active")
-                                .permitAll().anyRequest().authenticated())
-                .sessionManagement(session ->
-                        session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .addFilterBefore(requestFilter,UsernamePasswordAuthenticationFilter.class)
-                .csrf(csrf -> csrf.disable()) // JWT için CSRF kapat
+                .csrf(csrf -> csrf.disable()) // JWT ile CSRF kapalı
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers(
+                                "/api/v1.0/status",
+                                "/api/v1.0/health",
+                                "/api/v1.0/login",
+                                "/api/v1.0/register",
+                                "/api/v1.0/active")
+                        .permitAll()
+                        .anyRequest().authenticated()
+                )
+                .sessionManagement(session -> session
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .addFilterBefore(requestFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
 
@@ -50,10 +56,11 @@ public class SecurityConfig {
     @Bean
     public UrlBasedCorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
+        // Render ortamında tüm domain’lerden request gelmesini istersen yerine "*" bırakabilirsin
         corsConfiguration.setAllowedOrigins(List.of("*"));
         corsConfiguration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         corsConfiguration.setAllowedHeaders(List.of("Authorization", "Content-Type", "Accept"));
-        corsConfiguration.setAllowCredentials(true);
+        corsConfiguration.setAllowCredentials(false); // "*" ile uyumlu olacak şekilde false
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", corsConfiguration);
