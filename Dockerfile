@@ -5,7 +5,7 @@ FROM openjdk:24-jdk-slim
 WORKDIR /app
 
 # Jar dosyasını kopyala (target altından)
-COPY .target/money-manager-0.0.1-SNAPSHOT.jar ./money-manager.jar
+COPY target/money-manager-0.0.1-SNAPSHOT.jar money-manager.jar
 
 # Port aç
 EXPOSE 8080
