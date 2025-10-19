@@ -33,7 +33,7 @@ public class SecurityConfig {
         return http.cors(Customizer.withDefaults())
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/status", "/health", "/api/v1.0/login", "/api/v1.0/register", "/active")
+                        auth.requestMatchers("/status", "/health", "/login", "/register", "/active")
                                 .permitAll().anyRequest().authenticated())
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
