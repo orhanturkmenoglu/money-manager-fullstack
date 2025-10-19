@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="workspace.xml updated.">
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="SecurityConfig requestMatchers updated.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/money/manager/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/money/manager/config/SecurityConfig.java" afterDir="false" />
     </list>
@@ -237,7 +237,7 @@
       <workItem from="1760624472314" duration="226000" />
       <workItem from="1760625633383" duration="2971000" />
       <workItem from="1760881973005" duration="5239000" />
-      <workItem from="1760889860714" duration="9066000" />
+      <workItem from="1760889860714" duration="10070000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -591,7 +591,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760905366399</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="SecurityConfig requestMatchers updated.">
+      <option name="closed" value="true" />
+      <created>1760906070016</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1760906070016</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +617,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(auth): implement user authentication, login, JWT token generation and account activation" />
     <MESSAGE value="feat(auth): implement JWT token generation and validation for user authentication" />
     <MESSAGE value="feat: register JwtRequestFilter as a Spring component to resolve missing bean error" />
     <MESSAGE value="feat: add Category module with CRUD operations and DTO mapping&#10;&#10;- Added CategoryEntity with profile relation&#10;- Implemented CategoryService for create, update, and query operations&#10;- Added CategoryDTO for data transfer&#10;- Created CategoryController endpoints&#10;- Added CategoryRepository with custom query methods" />
@@ -634,7 +641,8 @@
     <MESSAGE value="mvn-clean package updated." />
     <MESSAGE value="env backend_url updated." />
     <MESSAGE value="workspace.xml updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml updated." />
+    <MESSAGE value="SecurityConfig requestMatchers updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="SecurityConfig requestMatchers updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
