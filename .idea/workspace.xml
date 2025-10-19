@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="chore(structure): reorganize project folder structure for money-manager" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="chore(structure): reorganize project folder structure for money-manager">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +34,12 @@
     &quot;assignee&quot;: &quot;orhanturkmenoglu&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/orhanturkmenoglu/money-manager-fullstack",
-    "accountId": "ed9e0238-35b5-4767-ab5f-3466dae833e5"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/orhanturkmenoglu/money-manager-fullstack&quot;,
+    &quot;accountId&quot;: &quot;ed9e0238-35b5-4767-ab5f-3466dae833e5&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -51,6 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.Dockerfile.executor": "Run",
     "JUnit.MoneyManagerApplicationTests.executor": "Run",
     "Maven. [clean].executor": "Run",
     "Maven.money-manager [clean,package,-DskipTests].executor": "Run",
@@ -92,7 +99,7 @@
       <command value="mvn clean package -DskipTests " />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MoneyManagerApplication">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="MoneyManagerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="money-manager" />
       <extension name="coverage">
@@ -174,12 +181,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="JUnit.MoneyManagerApplicationTests" />
       <item itemvalue="Spring Boot.MoneyManagerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="JUnit.MoneyManagerApplicationTests" />
       </list>
     </recent_temporary>
@@ -203,6 +224,7 @@
       <workItem from="1760624472314" duration="226000" />
       <workItem from="1760625633383" duration="2971000" />
       <workItem from="1760881973005" duration="5239000" />
+      <workItem from="1760889860714" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -428,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760889781841</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="chore(structure): reorganize project folder structure for money-manager">
+      <option name="closed" value="true" />
+      <created>1760890063096</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1760890063096</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
