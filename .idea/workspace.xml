@@ -234,7 +234,7 @@
       <workItem from="1760624472314" duration="226000" />
       <workItem from="1760625633383" duration="2971000" />
       <workItem from="1760881973005" duration="5239000" />
-      <workItem from="1760889860714" duration="10514000" />
+      <workItem from="1760889860714" duration="10848000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -604,7 +604,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760907086258</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="SecurityConfig cors updated.">
+      <option name="closed" value="true" />
+      <created>1760907839500</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1760907839500</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
