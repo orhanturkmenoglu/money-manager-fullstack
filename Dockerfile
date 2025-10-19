@@ -1,5 +1,5 @@
 FROM openjdk:24-jdk-slim
 WORKDIR /app
-COPY target/money-manager-0.0.1-SNAPSHOT.jar moneymanager-v1.0.jar
+COPY money-manager/target/money-manager-0.0.1-SNAPSHOT.jar moneymanager-v1.0.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "moneymanager-v1.0.jar"]
