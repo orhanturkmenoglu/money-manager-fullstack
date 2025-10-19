@@ -6,6 +6,7 @@ import com.example.money.manager.entity.ProfileEntity;
 import com.example.money.manager.repository.ProfileRepository;
 import com.example.money.manager.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -32,13 +33,16 @@ public class ProfileService {
         newProfile.setActiveToken(UUID.randomUUID().toString());
         newProfile = profileRepository.save(newProfile);
 
-        String activationLink = "http://localhost:8080/api/v1.0/active?token=" + newProfile.getActiveToken();
+        String activationLink = activationUrl+"/api/v1.0/active?token=" + newProfile.getActiveToken();
         String htmlBody = EmailService.buildActivationEmailBody(newProfile.getFullName(), activationLink);
 
         emailService.sendEmail(newProfile.getEmail(),"Activate Your Account",htmlBody);
 
         return toDto(newProfile);
     }
+
+    @Value("${app.activation.url}")
+    private String activationUrl;
 
     public boolean activeProfile(String activeToken) {
         return profileRepository.findByActiveToken(activeToken)

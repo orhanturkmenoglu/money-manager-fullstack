@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat(dashboard-filter): implement DashboardService, DashboardController, FilterController, RecentTransactionDTO">
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/NotificationService.java" afterDir="false" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="fix: Updated EmailService: added subject parameter for account activation email">
+      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/MoneyManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/MoneyManagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/ExpenseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/entity/ExpenseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/repository/ExpenseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ExpenseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/DashboardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -59,10 +56,11 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.MoneyManagerApplication.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/money-manager/money-manager/money-manager/src/main/java/com/example/money/manager",
+    "last_opened_file_path": "D:/money-manager/money-manager/money-manager/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,6 +71,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\money-manager\money-manager\money-manager\src\main\resources" />
       <recent name="D:\money-manager\money-manager\money-manager\src\main\java\com\example\money\manager" />
     </key>
   </component>
@@ -82,6 +81,8 @@
         <env name="EMAIL_PASSWORD" value="dbng lmad dldv obpy" />
         <env name="EMAIL_USERNAME" value="orhantrkmn15@gmail.com" />
         <env name="JWT_SECRET" value="285cf6569f79e7b509dbd2726b99146715eb1b9b00d7f70d51988599c96ad479" />
+        <env name="MONEY_MANAGER_BACKEND_URL" value="http://localhost:8080" />
+        <env name="MONEY_MANAGER_FRONTEND_URL" value="http://localhost:5173" />
       </envs>
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="money-manager" />
@@ -111,7 +112,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760367869269</updated>
-      <workItem from="1760367869666" duration="33459000" />
+      <workItem from="1760367869666" duration="33779000" />
+      <workItem from="1760624472314" duration="226000" />
+      <workItem from="1760625633383" duration="2971000" />
+      <workItem from="1760881973005" duration="1165000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -249,7 +253,63 @@
       <option name="project" value="LOCAL" />
       <updated>1760558356321</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: add daily reminder and expense summary email notifications with HTML templates and Istanbul timezone">
+      <option name="closed" value="true" />
+      <created>1760561432359</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760561432359</updated>
+    </task>
+    <task id="LOCAL-00019" summary="refactor: add overloaded sendEmail method with custom subject support">
+      <option name="closed" value="true" />
+      <created>1760561481280</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1760561481280</updated>
+    </task>
+    <task id="LOCAL-00020" summary="refactor: update @ManyToOne mapping for category field">
+      <option name="closed" value="true" />
+      <created>1760561515777</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760561515778</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: add findByProfileIdAndDate query to ExpenseRepository">
+      <option name="closed" value="true" />
+      <created>1760561556100</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1760561556100</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: add getExpensesForUserOnDate method to ExpenseService">
+      <option name="closed" value="true" />
+      <created>1760561580246</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1760561580246</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: annotation enable scheduling in MoneyManagerApplication">
+      <option name="closed" value="true" />
+      <created>1760561614477</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1760561614477</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix: Updated EmailService: added subject parameter for account activation email">
+      <option name="closed" value="true" />
+      <created>1760561683153</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1760561683153</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +344,14 @@
     <MESSAGE value="feat: add Expense and Income services &amp; controllers; repository queries implemented" />
     <MESSAGE value="feat: add IncomeController with latest and total income endpoints" />
     <MESSAGE value="feat(dashboard-filter): implement DashboardService, DashboardController, FilterController, RecentTransactionDTO" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(dashboard-filter): implement DashboardService, DashboardController, FilterController, RecentTransactionDTO" />
+    <MESSAGE value="feat: add daily reminder and expense summary email notifications with HTML templates and Istanbul timezone" />
+    <MESSAGE value="refactor: add overloaded sendEmail method with custom subject support" />
+    <MESSAGE value="refactor: update @ManyToOne mapping for category field" />
+    <MESSAGE value="feat: add findByProfileIdAndDate query to ExpenseRepository" />
+    <MESSAGE value="feat: add getExpensesForUserOnDate method to ExpenseService" />
+    <MESSAGE value="feat: annotation enable scheduling in MoneyManagerApplication" />
+    <MESSAGE value="fix: Updated EmailService: added subject parameter for account activation email" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Updated EmailService: added subject parameter for account activation email" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
