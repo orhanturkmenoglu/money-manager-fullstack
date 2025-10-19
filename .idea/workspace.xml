@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="fix: Updated EmailService: added subject parameter for account activation email">
-      <change afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application-prod.properties" afterDir="false" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="refactor: reorganized money-manager folder structure">
+      <change afterPath="$PROJECT_DIR$/money-manager/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/DashboardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/java/com/example/money/manager/service/ProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/money-manager/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/src/main/java/com/example/money/manager/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/src/main/java/com/example/money/manager/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/money-manager/src/test/java/com/example/money/manager/MoneyManagerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/money-manager/src/test/java/com/example/money/manager/MoneyManagerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -50,6 +52,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.MoneyManagerApplicationTests.executor": "Run",
+    "Maven. [clean].executor": "Run",
+    "Maven.money-manager [clean,package,-DskipTests].executor": "Run",
+    "Maven.money-manager [clean].executor": "Run",
+    "Maven.money-manager [package].executor": "Run",
+    "Maven.money-manager [test].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -66,6 +74,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,14 +84,69 @@
       <recent name="D:\money-manager\money-manager\money-manager\src\main\java\com\example\money\manager" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="MoneyManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn clean package -DskipTests " />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MoneyManagerApplicationTests">
+    <configuration name="MoneyManagerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="money-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.money.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.money.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.money.manager.MoneyManagerApplicationTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <envs>
         <env name="EMAIL_PASSWORD" value="dbng lmad dldv obpy" />
         <env name="EMAIL_USERNAME" value="orhantrkmn15@gmail.com" />
         <env name="JWT_SECRET" value="285cf6569f79e7b509dbd2726b99146715eb1b9b00d7f70d51988599c96ad479" />
         <env name="MONEY_MANAGER_BACKEND_URL" value="http://localhost:8080" />
         <env name="MONEY_MANAGER_FRONTEND_URL" value="http://localhost:5173" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="money-manager" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="EMAIL_PASSWORD" value="dbng lmad dldv obpy" />
+        <env name="EMAIL_USERNAME" value="orhantrkmn15@gmail.com" />
+        <env name="JWT_SECRET" value="285cf6569f79e7b509dbd2726b99146715eb1b9b00d7f70d51988599c96ad479" />
+        <env name="MONEY_MANAGER_BACKEND_URL" value="http://localhost:8080" />
+        <env name="MONEY_MANAGER_FRONTEND_URL" value="http://localhost:5173" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoneyManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="EMAIL_PASSWORD" value="dbng lmad dldv obpy" />
+        <env name="EMAIL_USERNAME" value="orhantrkmn15@gmail.com" />
+        <env name="MONEY_MANAGER_BACKEND_URL" value="http://localhost:8080" />
+        <env name="MONEY_MANAGER_FRONTEND_URL" value="http://localhost:5173" />
+        <env name="JWT_SECRET" value="285cf6569f79e7b509dbd2726b99146715eb1b9b00d7f70d51988599c96ad479" />
       </envs>
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="money-manager" />
@@ -96,6 +160,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="money-manager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MoneyManagerApplicationTests" />
+      <item itemvalue="Spring Boot.MoneyManagerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MoneyManagerApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -115,7 +200,7 @@
       <workItem from="1760367869666" duration="33779000" />
       <workItem from="1760624472314" duration="226000" />
       <workItem from="1760625633383" duration="2971000" />
-      <workItem from="1760881973005" duration="1165000" />
+      <workItem from="1760881973005" duration="5239000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -309,7 +394,31 @@
       <option name="project" value="LOCAL" />
       <updated>1760561683153</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="chore(config): link prod profile to PostgreSQL database and activate prod profile">
+      <option name="closed" value="true" />
+      <created>1760883261193</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1760883261193</updated>
+    </task>
+    <task id="LOCAL-00026" summary="style(dashboard): fix indentation and spacing in DashboardService">
+      <option name="closed" value="true" />
+      <created>1760883305166</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1760883305166</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor: reorganized money-manager folder structure">
+      <option name="closed" value="true" />
+      <created>1760883406381</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1760883406381</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,8 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit: setup Spring Boot Money Manager project with core dependencies" />
-    <MESSAGE value="setup Spring Boot Money Manager project with core  dependencies" />
     <MESSAGE value="feat: add MySQL and JPA configuration with context path setup" />
     <MESSAGE value="feat: add health/status endpoint for application availability check" />
     <MESSAGE value="feat(profile): implement profile registration with entity, DTO, repository (findByEmail), service and controller" />
@@ -351,7 +458,10 @@
     <MESSAGE value="feat: add getExpensesForUserOnDate method to ExpenseService" />
     <MESSAGE value="feat: annotation enable scheduling in MoneyManagerApplication" />
     <MESSAGE value="fix: Updated EmailService: added subject parameter for account activation email" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Updated EmailService: added subject parameter for account activation email" />
+    <MESSAGE value="chore(config): link prod profile to PostgreSQL database and activate prod profile" />
+    <MESSAGE value="style(dashboard): fix indentation and spacing in DashboardService" />
+    <MESSAGE value="refactor: reorganized money-manager folder structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: reorganized money-manager folder structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -359,7 +469,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.5.5/spring-security-core-6.5.5.jar!/org/springframework/security/core/userdetails/UserDetailsService.class</url>
           <line>8</line>
-          <properties class="org.springframework.security.core.userdetails.UserDetailsService" method="loadUserByUsername">
+          <properties class="org.springframework.security.core.userdetails.UserDetailsService">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
