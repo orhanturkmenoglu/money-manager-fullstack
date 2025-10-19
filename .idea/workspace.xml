@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="mvn-clean package updated.">
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="env backend_url updated.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +236,7 @@
       <workItem from="1760624472314" duration="226000" />
       <workItem from="1760625633383" duration="2971000" />
       <workItem from="1760881973005" duration="5239000" />
-      <workItem from="1760889860714" duration="7017000" />
+      <workItem from="1760889860714" duration="8271000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: setup Spring Boot Money Manager project with core dependencies">
       <option name="closed" value="true" />
@@ -574,7 +574,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760903377789</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="env backend_url updated.">
+      <option name="closed" value="true" />
+      <created>1760904128533</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1760904128533</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(security): configure Spring Security with CORS, CSRF disable, stateless sessions, and password encoder" />
     <MESSAGE value="feat(security): encode user passwords with BCrypt before saving to DB" />
     <MESSAGE value="feat(auth): implement user authentication, login, JWT token generation and account activation" />
     <MESSAGE value="feat(auth): implement JWT token generation and validation for user authentication" />
@@ -617,7 +624,8 @@
     <MESSAGE value="Add target folder" />
     <MESSAGE value="application-prod.properties postgresql config updated." />
     <MESSAGE value="mvn-clean package updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="mvn-clean package updated." />
+    <MESSAGE value="env backend_url updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="env backend_url updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
