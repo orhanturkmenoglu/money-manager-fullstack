@@ -34,11 +34,11 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable()) // JWT ile CSRF kapalı
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
-                                "/api/v1.0/status",
-                                "/api/v1.0/health",
-                                "/api/v1.0/login",
-                                "/api/v1.0/register",
-                                "/api/v1.0/active")
+                                "/status",
+                                "/health",
+                                "/login",
+                                "/register",
+                                "/active")
                         .permitAll()
                         .anyRequest().authenticated()
                 )
