@@ -14,6 +14,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Map;
 import java.util.UUID;
@@ -28,10 +29,13 @@ public class ProfileService {
     private final AuthenticationManager authenticationManager;
     private final JwtUtil jwtUtil;
 
+    @Transactional
     public ProfileDto registerProfile(ProfileDto profileDto) {
         ProfileEntity newProfile = toEntity(profileDto);
+        System.out.println("New profile :"+newProfile.toString());
         newProfile.setActiveToken(UUID.randomUUID().toString());
         newProfile = profileRepository.save(newProfile);
+        System.out.println("Saved profile :"+newProfile.toString());
 
         String activationLink = activationUrl+"/api/v1.0/active?token=" + newProfile.getActiveToken();
         String htmlBody = EmailService.buildActivationEmailBody(newProfile.getFullName(), activationLink);
