@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="feat: add Excel export for income and expenses&#10;&#10;- Added /excel/download/income and /excel/download/expense endpoints&#10;- Implemented ExcelService to generate .xlsx files using Apache POI (XSSF)&#10;- Supports current month data for logged-in user&#10;- Includes proper headers and formatting for S.No, Name, Category, Amount, Date">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/money/manager/controller/EmailController.java" afterDir="false" />
+    <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="added emailservice send to excel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/money/manager/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/money/manager/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/money/manager/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/money/manager/service/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +160,9 @@
         <env name="JWT_SECRET" value="285cf6569f79e7b509dbd2726b99146715eb1b9b00d7f70d51988599c96ad479" />
         <env name="MONEY_MANAGER_BACKEND_URL" value="http://localhost:8080" />
         <env name="MONEY_MANAGER_FRONTEND_URL" value="http://localhost:5173" />
+        <env name="MYSQL_DB_URL_RAILWAY" value="jdbc:mysql://metro.proxy.rlwy.net:31750/railway?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC" />
+        <env name="MYSQL_USERNAME_RAILWAY" value="root" />
+        <env name="MYSQL_PASSWORD_RAILWAY" value="sCHcFItEIaJZJCFytNyhqkaqaIQjiGDP" />
       </envs>
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="money-manager" />
@@ -246,15 +251,8 @@
       <workItem from="1761201835364" duration="4069000" />
       <workItem from="1761257436327" duration="2632000" />
       <workItem from="1761724176209" duration="5792000" />
-      <workItem from="1761838577337" duration="6736000" />
-    </task>
-    <task id="LOCAL-00010" summary="feat(auth): implement user authentication, login, JWT token generation and account activation">
-      <option name="closed" value="true" />
-      <created>1760377454209</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1760377454209</updated>
+      <workItem from="1761838577337" duration="7488000" />
+      <workItem from="1761924310556" duration="3343000" />
     </task>
     <task id="LOCAL-00011" summary="feat(auth): implement JWT token generation and validation for user authentication">
       <option name="closed" value="true" />
@@ -640,7 +638,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761847049770</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="added emailservice send to excel">
+      <option name="closed" value="true" />
+      <created>1761853753428</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1761853753428</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +664,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: update @ManyToOne mapping for category field" />
     <MESSAGE value="feat: add findByProfileIdAndDate query to ExpenseRepository" />
     <MESSAGE value="feat: add getExpensesForUserOnDate method to ExpenseService" />
     <MESSAGE value="feat: annotation enable scheduling in MoneyManagerApplication" />
@@ -683,7 +688,8 @@
     <MESSAGE value="git add target commit" />
     <MESSAGE value="servlet context path application.properties updated." />
     <MESSAGE value="feat: add Excel export for income and expenses&#10;&#10;- Added /excel/download/income and /excel/download/expense endpoints&#10;- Implemented ExcelService to generate .xlsx files using Apache POI (XSSF)&#10;- Supports current month data for logged-in user&#10;- Includes proper headers and formatting for S.No, Name, Category, Amount, Date" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Excel export for income and expenses&#10;&#10;- Added /excel/download/income and /excel/download/expense endpoints&#10;- Implemented ExcelService to generate .xlsx files using Apache POI (XSSF)&#10;- Supports current month data for logged-in user&#10;- Includes proper headers and formatting for S.No, Name, Category, Amount, Date" />
+    <MESSAGE value="added emailservice send to excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="added emailservice send to excel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
