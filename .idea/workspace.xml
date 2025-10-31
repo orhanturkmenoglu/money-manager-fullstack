@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="chore: mvn clean package and commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,15 +252,7 @@
       <workItem from="1761257436327" duration="2632000" />
       <workItem from="1761724176209" duration="5792000" />
       <workItem from="1761838577337" duration="7488000" />
-      <workItem from="1761924310556" duration="4886000" />
-    </task>
-    <task id="LOCAL-00014" summary="feat : add IncomeRepository and ExponseRepository with custom query methods">
-      <option name="closed" value="true" />
-      <created>1760550633321</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1760550633321</updated>
+      <workItem from="1761924310556" duration="6062000" />
     </task>
     <task id="LOCAL-00015" summary="feat: add Expense and Income services &amp; controllers; repository queries implemented">
       <option name="closed" value="true" />
@@ -649,7 +638,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761932794679</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="chore: mvn clean package and commit">
+      <option name="closed" value="true" />
+      <created>1761934028934</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1761934028934</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
