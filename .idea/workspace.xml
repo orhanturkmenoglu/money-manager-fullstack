@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d487cb31-8bbe-48f9-b4d8-35d01f94f57f" name="Changes" comment="chore: mvn clean package and commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/money/manager/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/money/manager/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/money/manager/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/money/manager/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/money/manager/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/money/manager/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/money/manager/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/money/manager/service/ProfileService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,23 +256,8 @@
       <workItem from="1761257436327" duration="2632000" />
       <workItem from="1761724176209" duration="5792000" />
       <workItem from="1761838577337" duration="7488000" />
-      <workItem from="1761924310556" duration="6062000" />
-    </task>
-    <task id="LOCAL-00015" summary="feat: add Expense and Income services &amp; controllers; repository queries implemented">
-      <option name="closed" value="true" />
-      <created>1760555210375</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1760555210375</updated>
-    </task>
-    <task id="LOCAL-00016" summary="feat: add IncomeController with latest and total income endpoints">
-      <option name="closed" value="true" />
-      <created>1760555343796</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1760555343796</updated>
+      <workItem from="1761924310556" duration="7282000" />
+      <workItem from="1762148550280" duration="2604000" />
     </task>
     <task id="LOCAL-00017" summary="feat(dashboard-filter): implement DashboardService, DashboardController, FilterController, RecentTransactionDTO">
       <option name="closed" value="true" />
@@ -646,7 +635,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761934028934</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="chore: mvn clean package and commit">
+      <option name="closed" value="true" />
+      <created>1761935142250</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1761935142250</updated>
+    </task>
+    <task id="LOCAL-00065" summary="chore: mvn clean package and commit">
+      <option name="closed" value="true" />
+      <created>1761935940878</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1761935940878</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
